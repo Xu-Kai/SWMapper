@@ -1556,8 +1556,6 @@ sindex_t shift_ref_pos_v(ref_info_t *ref_info_s, sindex_t *ref_seq, index_t *ref
             }
         }
 
-
-
         if(eq_flag){       
 #endif
             sindex_t shift_n = base_pos&0x1f;
@@ -1606,9 +1604,6 @@ void banded_myers(ref_info_t *ref_info_s, cigar_t *cigar, read_info_t *read_info
     dma_set_reply(&pe_get_ref_desc, &reply_ref); 
     dma_set_size(&pe_get_ref_desc, ref_get_size); 
 
-
-
-
     index_t simd_width = SIMD_WIDTH;
 
     index_t i = 0; 
@@ -1626,9 +1621,6 @@ void banded_myers(ref_info_t *ref_info_s, cigar_t *cigar, read_info_t *read_info
     index_t ref_shift[2][simd_width];
 
     error_t err_loc_info[simd_width];
-
-
-
 
     index_t ref_block = 0;
     index_t ref_enc_len = READ_LEN/16;

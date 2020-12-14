@@ -57,7 +57,7 @@ Parameters:
 Example:
 
 ```bash
-bsub -debug -I -b -m 1 -q q_sw_expr -share_size 7200 -host_stack 256 -n 1 -cgsp 64 -o print.out ./serial_index.out -ihg38.fa  -phg38
+bsub -debug -I -b -m 1 -q q_sw_expr -share_size 7200 -host_stack 256 -n 4 -cgsp 64 -o print.out ./mpi_index.out -ihg38.fa  -phg38
 ```
 
 ### Mapping
